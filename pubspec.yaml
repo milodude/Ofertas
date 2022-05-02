@@ -8,6 +8,7 @@ environment:
   sdk: ">=2.16.2 <3.0.0"
 
 dependencies:
+  build_runner: ^2.1.10
   cloud_firestore: ^3.1.13
   connectivity: ^3.0.6
   cupertino_icons: ^1.0.2
