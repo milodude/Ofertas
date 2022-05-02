@@ -1,0 +1,1 @@
+const String serverException = 'There was a server Exception';

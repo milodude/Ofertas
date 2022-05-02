@@ -5,7 +5,7 @@
 import 'dart:async' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:ofertas/core/platform/network_info.dart' as _i3;
+import 'package:ofertas/core/network/network_info.dart' as _i3;
 import 'package:ofertas/features/login/data/data_sources/google_sign_in_account_local_data_source.dart'
     as _i6;
 import 'package:ofertas/features/login/data/data_sources/google_sign_in_account_remote_data_source.dart'
@@ -33,8 +33,8 @@ class MockNetworkInfo extends _i1.Mock implements _i3.NetworkInfo {
   }
 
   @override
-  _i4.Future<bool> isconnected() =>
-      (super.noSuchMethod(Invocation.method(#isconnected, []),
+  _i4.Future<bool> isConnected() =>
+      (super.noSuchMethod(Invocation.method(#isConnected, []),
           returnValue: Future<bool>.value(false)) as _i4.Future<bool>);
 }
 
