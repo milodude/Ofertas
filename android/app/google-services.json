@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179069877503",
+    "project_id": "ofertas-6eeeb",
+    "storage_bucket": "ofertas-6eeeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179069877503:android:9a4e1253d2870f2485e0ca",
+        "android_client_info": {
+          "package_name": "com.example.ofertas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179069877503-rghnp3nk11dut8sg20bj7blflrceo80f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZn9TZUmx2MPHIJk5QUrWc33Fx04qsRec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179069877503-rghnp3nk11dut8sg20bj7blflrceo80f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
