@@ -22,9 +22,8 @@ class GoogleSignInAccountLocalDataSourceImpl
   GoogleSignInAccountLocalDataSourceImpl({required this.sharedPreferences});
 
   @override
-  Future<void> cacheGoogleAccount(UserData modelToCache) {
-    //final account = sharedPreferences.getString(googleSignInData);
-    throw UnimplementedError();
+  Future<void> cacheGoogleAccount(UserData modelToCache){
+    return sharedPreferences.setString(googleSignInData, jsonEncode(modelToCache.toJson()));
   }
 
   @override

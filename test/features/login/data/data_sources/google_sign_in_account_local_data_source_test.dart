@@ -48,4 +48,18 @@ void main() {
 
     //TODO: crear test para setear el valor en shared preferences
   });
+
+  group('Cache userData in shared preferences', (){
+    setUp((){
+     when(mockSharedPreferences.setString(googleSignInData, any)).thenAnswer((_)=>Future.value(true));
+    });
+    test('Should cache user data properly without any inconvenient', ()async{
+      //Arrange
+      var tUserData = GoogleSignInAccountModel.fromJson(jsonDecode(fixture('google_sign_in_fixture.json'))).toUserData(); 
+      //Act
+      await localDataSourceImpl.cacheGoogleAccount(tUserData);
+      //Assert
+      verify(mockSharedPreferences.setString(googleSignInData,any));
+    });
+  });
 }

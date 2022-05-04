@@ -23,6 +23,7 @@ class GoogleSignInAccountModel extends UserData {
     );
   }
 
+  @override
   Map<String, dynamic> toJson() {
     return {
       'uid': uid,

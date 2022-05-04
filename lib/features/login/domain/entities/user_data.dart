@@ -16,5 +16,12 @@ class UserData extends Equatable {
   @override
   List<Object?> get props => [uid, displayName, email, photoUrl];
 
-  
+  Map<String, dynamic> toJson() {
+    return {
+      'uid': uid,
+      'displayName': displayName,
+      'email': email,
+      'photoUrl': photoUrl
+    };
+  }
 }
