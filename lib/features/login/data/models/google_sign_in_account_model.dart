@@ -31,4 +31,8 @@ class GoogleSignInAccountModel extends UserData {
       'photoUrl': photoUrl
     };
   }
+
+  UserData toUserData(){
+    return UserData(uid: uid, displayName: displayName, email: email, photoUrl: photoUrl);
+  }
 }
