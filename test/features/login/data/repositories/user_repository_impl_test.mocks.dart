@@ -48,10 +48,9 @@ class MockGoogleSignInAccountRemoteDataSource extends _i1.Mock
   }
 
   @override
-  _i4.Future<_i2.UserData> googleLogIn() =>
-      (super.noSuchMethod(Invocation.method(#googleLogIn, []),
-              returnValue: Future<_i2.UserData>.value(_FakeUserData_0()))
-          as _i4.Future<_i2.UserData>);
+  _i4.Future<_i2.UserData?> googleLogIn() => (super.noSuchMethod(
+      Invocation.method(#googleLogIn, []),
+      returnValue: Future<_i2.UserData?>.value()) as _i4.Future<_i2.UserData?>);
   @override
   _i4.Future<void> googleLogOut() =>
       (super.noSuchMethod(Invocation.method(#googleLogOut, []),

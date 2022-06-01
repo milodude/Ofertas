@@ -33,25 +33,12 @@ class UserRepositoryImpl extends ChangeNotifier implements IUserRepository {
     try{
 
     var _userData = await remoteDataSource.googleLogIn();
-    localDataSource.cacheGoogleAccount(_userData);
+    localDataSource.cacheGoogleAccount(_userData!);
     return Right(_userData);
     }on ServerException{  
       return const Left(ServerFailure(serverException));
     }
-    // try {
-    //   GoogleSignInAccount? googleAccount = await _googleSignIn.signIn();
-    //   if (googleAccount == null) return;
-    //   _user = googleAccount;
-
-    //   final googleAuth = await googleAccount.authentication;
-    //   final credential = GoogleAuthProvider.credential(
-    //       accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
-
-    //   await FirebaseAuth.instance.signInWithCredential(credential);
-    //   notifyListeners();
-    // } catch (e) {
-    //   // print(e.toString());
-    // }
+  
   }
 
   @override
